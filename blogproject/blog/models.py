@@ -17,6 +17,7 @@ class Tag(models.Model):
 
 @python_2_unicode_compatible
 class Post(models.Model):
+    objects = models.Manager()
     ojects = models.Manager()
     title = models.CharField(max_length=70)
     body = models.TextField()
